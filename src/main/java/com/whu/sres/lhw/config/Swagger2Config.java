@@ -1,4 +1,4 @@
-package com.whu.sres.lhw;
+package com.whu.sres.lhw.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,12 +14,12 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * Description:
+ * Description:Swagger2配置
  * Created by lvhw on 2019/3/11 0:02.
  */
 @Configuration
 @EnableSwagger2
-public class Swagger2Config {
+public class Swagger2Config extends WebMvcConfigurerAdapter{
 
     @Bean
     public Docket accessToken() {
@@ -42,5 +42,21 @@ public class Swagger2Config {
                 .build();
     }
 
+    /*@Override
+    // 前端访问swagger-ui.html，不生效时，重点关注下swagger-ui是否正常的引入。
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
 
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }*/
 }
