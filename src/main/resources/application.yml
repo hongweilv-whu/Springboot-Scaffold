@@ -1,0 +1,24 @@
+# 公共配置
+
+server:
+  port: 8099
+
+spring:
+  profiles:
+    active: dev
+
+  mail:
+    host: smtp.163.com
+    username: 18717152204@163.com
+    password:
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+
+
+
+jdbc:
+  url: jdbc:mysql://localhost:3306/test_springboot?useUnicode=true&characterEncoding=utf8
+  driver: com.mysql.jdbc.Driver
+  userName: root
+  passWord: root123
