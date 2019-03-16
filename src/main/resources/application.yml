@@ -15,10 +15,3 @@ spring:
     properties.mail.smtp.starttls.enable: true
     properties.mail.smtp.starttls.required: true
 
-
-
-jdbc:
-  url: jdbc:mysql://localhost:3306/test_springboot?useUnicode=true&characterEncoding=utf8
-  driver: com.mysql.jdbc.Driver
-  userName: root
-  passWord: root123
