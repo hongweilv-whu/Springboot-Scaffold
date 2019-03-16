@@ -1,4 +1,4 @@
-package com.whu.sres.lhw.bean;
+package com.whu.sres.lhw.biz.bean;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;

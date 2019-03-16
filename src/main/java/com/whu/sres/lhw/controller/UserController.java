@@ -1,7 +1,7 @@
 package com.whu.sres.lhw.controller;
 
 import com.whu.sres.lhw.bean.JdbcBean;
-import com.whu.sres.lhw.bean.User;
+import com.whu.sres.lhw.biz.bean.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

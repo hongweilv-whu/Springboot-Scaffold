@@ -1,7 +1,7 @@
 package com.whu.sres.lhw.controller;
 
 import com.whu.sres.lhw.bean.JdbcBean;
-import com.whu.sres.lhw.bean.User;
+import com.whu.sres.lhw.biz.bean.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
